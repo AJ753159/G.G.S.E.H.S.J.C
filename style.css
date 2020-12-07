@@ -1,0 +1,32 @@
+header{
+			font-weight: bolder;
+			text-shadow: 2px 2px grey;
+			font-size: 40px;
+			font-family: "Times New Roman", Times, serif;
+			background-color: #ffce3c;
+			padding-left: 20px;
+}
+footer{
+			height: 50px;
+			background-color: grey;
+			padding-top: 5px;
+			color: white;
+			text-align: center;
+		}
+button{
+			background-color: green;
+		  	color: white;
+		  	padding: 14px 20px;
+		  	margin-left: 45%;
+		  	margin-top: 1px;
+		  	border: 10px;
+		  	cursor: pointer;
+		  	width: 10%;
+		  	position: center;
+}
+h1{
+				color: blue;
+				}
+			h3{
+				color: darkblue;
+			}

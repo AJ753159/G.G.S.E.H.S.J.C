@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Admission Form</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<style type="text/css">
+		.a{
+			margin: 0;
+			padding: 0;
+			}
+		.remains{
+			padding-left: 50px;
+			padding-right: 50px;
+			padding-top: -10px;
+		}
+		.remains{
+			background-color: #ffffa0;
+			}
+
+		section{
+			padding-left: 250px;
+		}
+
+	</style>
+	<script type="text/javascript">
+		function validate(Form1)
+		{
+			var return_value=true;
+			var first_name=document.getElementById("");
+			var middle_name=;
+			var last_name=;
+			var dob=;
+		}
+	</script>
+	<style type="text/css" src="style.css">
+		body {font-family: Arial, Helvetica, sans-serif;}
+		input[type=text], input[type=password] {
+			width: 100%;
+		  	padding: 5px 10px;
+		  	margin: 8px 0;
+		  	display: inline-block;
+		  	border: 1px solid #ccc;
+		  	box-sizing: border-box;
+		  }
+		th{
+			text-align: left;
+			padding-top: 20px;
+			font-weight: normal;
+		}
+		
+	</style>
+</head>
+<body class="a">	
+		<header>
+		<table>
+			<tr>
+				<th><img src="GGSEHSJC Logo.png" width="120px"></th>
+				<th><p align="right">Guru Gobind Singh English High School and Junior College</p></th>
+			</tr>
+		</table>
+	</header>
+	<section  style="width: 1000px;">
+	<div class="remains">
+	<h1 align="center"><u>Admission Form</u></h1>
+
+<form action="PHP/send.php" method="post">
+			<p><u>Personal Information</u></p>
+
+			Name:<input type="text" name="name" size="30" required="true" placeholder="First name       Middle Name       Last Name"><br><br>
+			
+			Email:<input type="text" name="email" size="40" required="true" placeholder="Enter Your Email Adress"><br><br>
+
+			Date of Birth:
+			<input type="date" id="datemin" name="dob" min="1995-01-01" max="2020-12-04"><br><br>
+			
+			Gender:<input type="radio" name="gender" value="Male" required="true">Male
+				<input type="radio" name="gender" value="Female" required="true">Female
+				<input type="radio" name="gender" value="Transgender" required="true">Transgender
+			<br><br>
+			<hr color="blue">
+			<p>Parents Details</p>
+			Father Name:<input type="text" name="fname" size="40" required="true" placeholder="First name       Middle Name       Last Name"><br><br>
+			
+			Mother Name:<input type="text" name="mname" size="40" required="true" placeholder="First name       Middle Name       Last Name"><br><br>
+			
+			<hr color="blue">
+			<p><u>Address Details</u></p>
+			Address Line 1:<input type="text" name="add1" size="150"><br><br>
+			Address Line 2:<input type="text" name="add2" size="150"><br><br>
+			City:
+			<select name="city" id="city">
+				<option value="mumbai_city">Mumbai City</option>
+				<option value="mumbai_suburban">Mumbai Suburban</option>
+				<option value="thane">Thane</option>
+				<option value="kalyan">Kalyan</option>
+				<option value="navi_mumbai">Navi Mumbai</option>
+			</select><br><br>
+			State:<input type="text" name="state" value="Maharashtra"><br><br>
+			Pincode:<input type="number" name="pincode" size="6" minlength="6" maxlength="6" min="400001" max="400099"><br><br>
+			
+			<hr color="blue">
+			<p><u>Additional Information</u></p>
+			UID No.:<input type="text" name="uid" value="" placeholder="1234 1234 1234" size="14" minlength="14" maxlength="14"><br><br>
+			Pan No.(if applicable):<input type="text" name="pan" value="" placeholder="ABCDE1234F" size="10" minlength="10" maxlength="10"><br><br>
+			<hr color="blue">
+			<p><u>Admission Details</u></p>
+			Select the class in which you want to take the admission:
+			<select name="class" id="class">
+				<option value="jr">Jr.Kg</option>
+				<option value="sr">Sr.Kg</option>
+				<option value="first">Class 1</option>
+				<option value="second">Class 2</option>
+				<option value="third">Class 3</option>
+				<option value="fourth">Class 4</option>
+				<option value="fifth">Class 5</option>
+				<option value="sixth">Class 6</option>
+				<option value="seventh">Class 7</option>
+				<option value="eighth">Class 8</option>
+				<option value="nineth">Class 9</option>
+				<option value="tenth">Class 10</option>
+				<option value="eleventh">FYJC Commerce</option>
+				<option value="twelveth">SYJC Commerce</option>
+			</select><br><br>
+			
+			Do you belong to management quota?: &nbsp &nbsp &nbsp<input type="radio" name="managequota" value="Yes">Yes &nbsp &nbsp &nbsp
+			<input type="radio" name="managequota" value="No">No<br><br>
+			Do you belong to sports quota? &nbsp &nbsp &nbsp<input type="radio" name="sportquota" value="Yes">Yes &nbsp &nbsp &nbsp
+			<input type="radio" name="sportquota" value="No">No<br><br>
+			<hr color="blue">
+			
+			<button class="btn-submit" type="submit" name="addsub">Submit</button>
+		</form>
+<br><br>
+</div>
+</section>
+<footer>
+	<p>&copy Copyright KALKI:2020</p>
+</footer>
+</body>
+</html>

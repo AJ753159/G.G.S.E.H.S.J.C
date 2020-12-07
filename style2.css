@@ -1,0 +1,132 @@
+body {
+    background-image: url(School.png);
+    background-color: #cccccc;
+}
+table {
+    display: table;
+    border-collapse: separate;
+    box-sizing: border-box;
+    text-indent: initial;
+    border-spacing: 2px;
+    border-color: grey;
+}
+tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+
+
+
+tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+
+td {
+    display: table-cell;
+    vertical-align: inherit;
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+:host {
+    display: inline-block;
+    overflow: hidden;
+    text-align: initial;
+    white-space: nowrap;
+}
+
+marquee {
+    display: inline-block;
+    width: -webkit-fill-available;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+
+
+div {
+    display: block;
+}
+
+.dropbtn {
+    background-color: #66523D;
+    color: #E9DDC6;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+button {
+    appearance: button;
+    -webkit-writing-mode: horizontal-tb !important;
+    text-rendering: auto;
+    color: -internal-light-dark(black, white);
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: center;
+    align-items: flex-start;
+    cursor: default;
+    background-color: -internal-light-dark(rgb(239, 239, 239), rgb(59, 59, 59));
+    box-sizing: border-box;
+    margin: 0em;
+    font: 400 13.3333px Arial;
+    padding: 1px 6px;
+    border-width: 2px;
+    border-style: outset;
+    border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+    border-image: initial;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #66523D;
+    min-width: 230px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content a {
+    color: #E9DDC6;
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+}
+a:visited {
+    color: #E9DDC6;
+    background-color: transparent;
+    text-decoration: none;
+}
+a:link {
+    color: #E9DDC6;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:-webkit-any-link {
+    color: -webkit-link;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+
+
+
+
+
