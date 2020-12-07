@@ -1,0 +1,119 @@
+
+*{
+  margin: 0;
+  padding: 0;
+}
+header{
+  background-color: #ffa6ff;
+  text-align: center;
+  font-weight: bolder;
+  color: darkblue;
+  animation: mymove 7s infinite;
+}
+@keyframes mymove {
+  from {background-color: #ffa6ff;}
+  to {background-color: #ffa500;}
+}
+.marquee{
+  height: 35px;
+    overflow: hidden;
+    position: center;
+    background: yellow;
+    color: #333;
+    border: 1px solid #4a4a4a;
+}
+        
+.marquee p{
+  position: absolute;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    line-height: 35px;
+    text-align: center;
+    -moz-transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+    -moz-animation: scroll-left 4s linear infinite;
+    -webkit-animation: scroll-left 4s linear infinite;
+    animation: scroll-left 20s linear infinite;
+}
+@-moz-keyframes scroll-left {
+  0% {
+    -moz-transform: translateX(100%);
+  }
+    100% {
+        -moz-transform: translateX(-100%);
+    }
+}
+@-webkit-keyframes scroll-left {
+    0% {
+        -webkit-transform: translateX(100%);
+    }
+    100% {
+        -webkit-transform: translateX(-100%);
+    }
+}
+@keyframes scroll-left {
+    0% {
+        -moz-transform: translateX(100%);
+        -webkit-transform: translateX(100%);
+        transform: translateX(100%);
+    }
+    100% {
+        -moz-transform: translateX(-100%);
+        -webkit-transform: translateX(-100%);
+        transform: translateX(-100%);
+     }
+}
+nav{
+  background-color:#22ff00 
+}
+.menu-btn {
+   background-color: #22ff00;
+   color: red;
+   padding-left: 35px;
+   padding-right: 35px;
+   padding-top: 10px;
+   padding-bottom: 10px;
+   font-size: 18px;
+   font-weight: bold;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   border: none;
+}
+.dropdown-menu {
+   position: relative;
+   display: inline-block;
+}
+.menu-content {
+   display: none;
+   position: absolute;
+   background-color: #22ff00;
+   min-width: 160px;
+   z-index: 1;
+}
+.links,.links-hidden{
+   display: inline-block;
+   color: red;
+   padding-left: 35px;
+   padding-right: 35px;
+   padding-top: 10px;
+   padding-bottom: 10px;
+   text-decoration: none;
+   font-size: 18px;
+   font-weight: bold;
+}
+.links-hidden{
+   display: block;
+}
+.links{
+   display: inline-block;
+}
+.links-hidden:hover,.links:hover {
+   background-color: #22ff00;
+}
+.dropdown-menu:hover .menu-content {
+   display: block;
+}
+.dropdown-menu:hover .menu-btn {
+   background-color: #22ff00;
+}
